@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "ESNext.Disposable"
+    ],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "strict": false,
+    "skipLibCheck": true,
+    "types": [
+      "node"
+    ],
+    "ignoreDeprecations": "6.0"
+  },
+  "include": [
+    "agent-native/*.ts",
+    "lib",
+    "cloud",
+    "runner",
+    "adapters",
+    "src",
+    "tests",
+    "local",
+    "scripts/start-local.mts",
+    "scripts/start-builder.mts"
+  ],
+  "exclude": [
+    "cloud/remote-entry.ts",
+    "cloud/remote-oauth.ts"
+  ]
+}
